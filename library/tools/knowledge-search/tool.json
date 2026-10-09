@@ -1,0 +1,13 @@
+{
+  "name": "knowledge-search",
+  "description": "Search project knowledge (references/, library/docs/, knowledge folders): graphify index plus ripgrep, with a targeted grep subcommand.",
+  "type": "research",
+  "side_effects": "none",
+  "tags": ["knowledge", "context", "search"],
+  "when_to_use": [
+    "find rules or procedures for a task",
+    "what does our research say about X",
+    "locate relevant passages in references or docs"
+  ],
+  "helps_with": "One deterministic entry point over text + graphify so agents don't hand-roll searches across knowledge roots."
+}

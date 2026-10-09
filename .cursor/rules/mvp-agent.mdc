@@ -1,0 +1,23 @@
+---
+description: MVP agent — search tools, rules, and context, then do the work
+alwaysApply: true
+---
+
+# MVP agent
+
+Read `.ai/system-prompt.md` and follow it. That is the brain. This rule only
+makes it always-on. `/orchestrator` loads the same file.
+
+For a normal chat turn, run the three searches yourself from repo root:
+
+```bash
+python3 library/tools/tool-search/cli.py search "<need>"
+python3 library/tools/knowledge-search/cli.py grep "<need>" --category rules
+python3 library/tools/context-loader/cli.py load --task "<task>"
+```
+
+Then read the winning tool's README before invoking. Use `--category procedures`
+when you need a how-to. Keep the loaded set small.
+
+Memory (`.ai/memory/`), pipe (`.ai/contracts/pipe.md`), and optional sub-agents
+(`.ai/agents/`) are in the system prompt — do not duplicate them here.

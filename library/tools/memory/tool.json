@@ -1,0 +1,13 @@
+{
+  "name": "memory",
+  "description": "Persist and read run-scoped markdown memory under .ai/memory/{run_id}.md (write, append, read, list, compact).",
+  "type": "both",
+  "side_effects": "writes files under .ai/memory/",
+  "tags": ["memory", "state", "persistence"],
+  "when_to_use": [
+    "save task state outside the context window",
+    "resume a run",
+    "record progress or decisions for a run"
+  ],
+  "helps_with": "Makes sessions ephemeral: state survives compaction or clearing without re-deriving it."
+}

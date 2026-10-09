@@ -1,0 +1,13 @@
+{
+  "name": "context-loader",
+  "description": "Suggest relevant repo files for a task via keyword matching on paths, with optional .context/manifest.json boosts.",
+  "type": "research",
+  "side_effects": "none",
+  "tags": ["context", "search", "files"],
+  "when_to_use": [
+    "find files relevant to a task",
+    "assemble context before working",
+    "which files matter for this feature"
+  ],
+  "helps_with": "Gives a deterministic file shortlist before expensive inference, instead of crawling the repo by hand."
+}

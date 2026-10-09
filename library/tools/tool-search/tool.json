@@ -1,0 +1,13 @@
+{
+  "name": "tool-search",
+  "description": "List and search harness tools by indexing library/tools/*/tool.json manifests, with tag, type, and keyword ranking.",
+  "type": "research",
+  "side_effects": "none",
+  "tags": ["tools", "search", "discovery"],
+  "when_to_use": [
+    "find the best tool for a job",
+    "what tools exist",
+    "discover a CLI before improvising"
+  ],
+  "helps_with": "Finds the minimal tool set on demand instead of loading every tool definition upfront."
+}
